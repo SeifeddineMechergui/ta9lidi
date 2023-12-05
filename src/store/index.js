@@ -226,7 +226,7 @@ export default createStore({
         state.filteredProducts = null;
       } else {
         state.searchWord = word;
-        word = removerAcentos(word.trim().toLowerCase());
+       // word = removerAcentos(word.trim().toLowerCase());
         state.filteredProducts = state.women
           .concat(state.men)
           .filter((product) => {
